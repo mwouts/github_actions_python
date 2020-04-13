@@ -178,7 +178,7 @@ It's good to have the coverage computed in the CI, but it is even better to have
         run: coverage report -m
 ```
 
-With this, I get a coverage badge ![](screenshots/coverage_badge.svg) which I can add to my [README](https://github.com/mwouts/jupytext/blob/master/README.md), detailed coverage statistics and charts at [codecov.io](https://codecov.io/gh/mwouts/jupytext/branch/master), and coverage reports in pull requests:
+With this, I get a coverage badge ![](screenshots/coverage_badge.svg) which I can add to my [README](https://github.com/mwouts/jupytext/blob/master/README.md), detailed coverage statistics and charts at [codecov.io](https://codecov.io/gh/mwouts/jupytext/branch/master), as well as coverage reports in pull requests:
 
 ![](screenshots/coverage_report.png)
 
