@@ -135,7 +135,7 @@ In the [`continuous-integration-conda.yml`](https://github.com/mwouts/jupytext/b
 
 ## Understanding CI errors
 
-I initially had an issue with the `flake8` step. The error was:
+I had initially an issue with the `flake8` step. The error was:
 ```
 Lint with flake8
 4s
