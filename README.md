@@ -20,17 +20,17 @@ In my case I created two files:
 
 At the top of the YAML file, we have this field: `name: CI (pip)`. While the name of the YAML file does not seem to have any impact, the `name` field at the top of the file is the one that appears in your [Actions tab](https://github.com/mwouts/jupytext/actions), and also the name that you will see on your badge:
 
-![](screenshots/actions_name_badge.png)
+![](https://raw.githubusercontent.com/mwouts/github_actions_python/master/screenshots/actions_name_badge.png)
 
 ## Trigger on push or pull_request events?
 
 With the `on` field, you choose which events should trigger an action. I initially tried `on: [push, pull_request]`, but I soon had the feeling that too many builds were triggered. Now I use `on: [push]` and that seems to be enough. With this, contributors receive an email when one of their commits breaks the CI, so they can fix the issue before opening a pull request. And with `on: [push]` already, you get status updates in the pull request:
 
-![](screenshots/pull_request_created.png)
+![](https://raw.githubusercontent.com/mwouts/github_actions_python/master/screenshots/pull_request_created.png)
 
 And, a few minutes later:
 
-![](screenshots/pull_request_ok.png)
+![](https://raw.githubusercontent.com/mwouts/github_actions_python/master/screenshots/pull_request_ok.png)
 
 ## Testing multiple variants of Python
 
@@ -178,9 +178,9 @@ It's good to have the coverage computed in the CI, but it is even better to have
         run: coverage report -m
 ```
 
-With this, I get a coverage badge ![](screenshots/coverage_badge.svg) which I can add to my [README](https://github.com/mwouts/jupytext/blob/master/README.md), detailed coverage statistics and charts at [codecov.io](https://codecov.io/gh/mwouts/jupytext/branch/master), as well as coverage reports in pull requests:
+With this, I get a coverage badge ![](https://raw.githubusercontent.com/mwouts/github_actions_python/master/screenshots/coverage_badge.svg) which I can add to my [README](https://github.com/mwouts/jupytext/blob/master/README.md), detailed coverage statistics and charts at [codecov.io](https://codecov.io/gh/mwouts/jupytext/branch/master), as well as coverage reports in pull requests:
 
-![](screenshots/coverage_report.png)
+![](https://raw.githubusercontent.com/mwouts/github_actions_python/master/screenshots/coverage_report.png)
 
 ## Automated job cancellation
 
@@ -188,7 +188,7 @@ One feature that surprised me at first, but makes sense, is the automated job ca
 
 Here is an example of this on my project - a problem occurs with the Windows build, and that triggers the cancellation of the remaining Windows and Mac OS jobs:
 
-![](screenshots/jobs_cancelled.png)
+![](https://raw.githubusercontent.com/mwouts/github_actions_python/master/screenshots/jobs_cancelled.png)
 
 ## Differences with Travis-CI
 
