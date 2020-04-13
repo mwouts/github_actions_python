@@ -25,9 +25,11 @@ At the top of the YAML file, we have this field: `name: CI (pip)`. While the nam
 ## Trigger on push or pull_request events?
 
 With the `on` field, you choose which events should trigger an action. I initially tried `on: [push, pull_request]`, but I soon had the feeling that too many builds were triggered. Now I use `on: [push]` and that seems to be enough. With this, contributors receive an email when one of their commits breaks the CI, so they can fix the issue before opening a pull request. And with `on: [push]` already, you get status updates in the pull request:
+
 ![](screenshots/pull_request_created.png)
 
 And, a few minutes later:
+
 ![](screenshots/pull_request_ok.png)
 
 ## Testing multiple variants of Python
@@ -177,6 +179,7 @@ It's good to have the coverage computed in the CI, but it is even better to have
 ```
 
 With this, I get a coverage badge ![](screenshots/coverage_badge.svg) which I can add to my [README](https://github.com/mwouts/jupytext/blob/master/README.md), detailed coverage statistics and charts at [codecov.io](https://codecov.io/gh/mwouts/jupytext/branch/master), and coverage reports in pull requests:
+
 ![](screenshots/coverage_report.png)
 
 ## Automated job cancellation
@@ -184,6 +187,7 @@ With this, I get a coverage badge ![](screenshots/coverage_badge.svg) which I ca
 One feature that surprised me at first, but makes sense, is the automated job cancellation. When one job in the CI fails, all the other jobs that are still running or pending are canceled. 
 
 Here is an example of this on my project - a problem occurs with the Windows build, and that triggers the cancellation of the remaining Windows and Mac OS jobs:
+
 ![](screenshots/jobs_cancelled.png)
 
 ## Differences with Travis-CI
