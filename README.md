@@ -192,7 +192,7 @@ Here is an example of this on my project - a problem occurs with the Windows bui
 
 ## Differences with Travis-CI
 
-Before discovering GitHub Actions, I was using [Travis-CI](travis-ci.com/). And I loved it! I have used Travis-CI on many projects, including this [fancy one](https://github.com/CFMTech/jupytext_papermill_post) where we [test... the README itself](https://github.com/CFMTech/jupytext_papermill_post/blob/master/.travis.yml)!
+Before discovering GitHub Actions, I was using [Travis-CI](https://travis-ci.com/). And I loved it! I have used Travis-CI on many projects, including this [fancy one](https://github.com/CFMTech/jupytext_papermill_post) where we [test... the README itself](https://github.com/CFMTech/jupytext_papermill_post/blob/master/.travis.yml)!
 
 Now I will conclude with a brief comparison between the two.
 - Travis-CI has been there for a much longer period. I could have feared that documentation would be harder to find for GitHub Actions, but that was not the case. Useful references were: [Using Python with GitHub Actions](https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions) and [Setup Miniconda](https://github.com/marketplace/actions/setup-miniconda).
